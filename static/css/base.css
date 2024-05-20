@@ -10,7 +10,7 @@ body {
 }
 
 #header {
-    background: green;
+    background: #46b646;
     color: white;
     padding: 25px 50px;
     display: flex;
@@ -54,10 +54,16 @@ body {
 
 #content input[type=submit] {
     color: white;
-    background: green;
+    background: #46b646;
+    border: none;
     padding: 10px 20px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+#content input[type=submit]:hover {
+    background: #328032;
 }
 
 .logout {
@@ -69,4 +75,9 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
+}
+
+.link {
+    color: #46b646;
+    text-decoration: none;
 }

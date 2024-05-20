@@ -8,7 +8,10 @@
       Your username and password didn't match
     </p>
   {% else %}
-    <p>Please, use the following form to login:</p>
+    <p>
+      Please, use the following form to login:
+      If you don't have an account <a href="{% url 'register' %}" class="link">register here</a>.
+    </p>
   {% endif %}
   <div class="login-form">
     <form action="{% url 'login' %}" method="post">
@@ -18,7 +21,7 @@
       <p><input type="submit" value="Log in"></p>
     </form>
     <p>
-      <a href="{% url 'password_reset' %}">
+      <a href="{% url 'password_reset' %}" class="link">
         Forgotten your password?
       </a>
     </p>
