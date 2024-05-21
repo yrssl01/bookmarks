@@ -100,10 +100,8 @@ ul.messages li.info {
 }
 
 ul.messages li.success { background:#81ce81; }
-ul.messages li.success a { color:#0ac33e; }
 
-ul.messages li.error { background:#a30029; color:#e9828e; }
-ul.messages li.error a { color:#e9828e; }
+ul.messages li.error { background:#a30029;}
 
 ul.messages li a.close {
     margin:0;
