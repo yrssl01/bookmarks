@@ -150,6 +150,7 @@ ul.messages li a.close {
 
 .image-detail { margin-top:20px; }
 .image-info div {
+    margin: 25px 0;
     padding:20px 0;
     overflow:auto;
 }
@@ -158,21 +159,37 @@ ul.messages li a.close {
     border:3px solid #bbb;
     border-radius:26px;
     padding:10px 20px;
-    margin:20px 10px 0;
+    margin: 20px 10px 0;
 }
-a.like, a.follow { float:right; margin-top:-8px; }
+a.like { float:right; margin-top:-8px; }
 
-#image-list { overflow:hidden; }
-#image-list .image {
-    float:left;
-    width:220px;
+.image-block {
+    width: 90%;
+    margin: 40px auto;
+}
+
+#image-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+#image-list .image-content {
+    width:350px;
     height:300px;
-    margin:0 10px 10px 10px;
-    border-top:8px solid #12c064;
+    margin: 25px 25px;
+    border-top:15px solid #46b646;
+    border-radius: 15px;
     background:#eee;
 }
-#image-list img { width:220px; height:220px; }
-#image-list .info { padding:10px; }
+
+.image img {
+    max-height: 200px;
+    width: 100%;
+}
+
+#image-list .info { padding:10px; text-align: center }
 #image-list .info a { color:#333; }
 .image-likes div {
     float:left;
@@ -187,29 +204,41 @@ a.like, a.follow { float:right; margin-top:-8px; }
 }
 
 /* users */
+#people-list {
+    margin: 25px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 #people-list img {
-    width:180px;
-    height:180px;
+    width:200px;
+    height:200px;
     border-radius:50%;
     margin-bottom:20px;
 }
 #people-list .user {
-    width:180px;
-    float:left;
+    width:330px;
     overflow:auto;
-    padding:10px;
+    margin: 20px 20px;
+    text-align: center;
 }
-#people-list .info { text-align:center; }
+/*#people-list .info { text-align:center; }*/
 img.user-detail {
     border-radius:50%;
     float:left;
 }
-.profile-info {
-    float:left;
-    overflow:auto;
-    margin-right:20px;
+
+.profile-image {
+    margin: 25px 90px;
+    overflow: auto;
 }
-.image-container { margin-top:40px; }
+
+.profile-info {
+    margin-left: 35px;
+    height: 50px;
+}
 
 /* actions */
 .action {
